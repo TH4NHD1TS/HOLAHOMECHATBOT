@@ -1,0 +1,39 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.form-column label {
+    display: block;
+    float: left;
+    clear: left;
+    width: 160px;
+    font-family: 'Courier', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.form-column input {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    font-family: 'Courier', sans-serif;
+    font-weight: 600;
+
+}
+
+.Title{
+
+}
+
+video {
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   z-index: 0;
+ }

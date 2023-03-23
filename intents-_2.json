@@ -1,0 +1,303 @@
+{
+    "intents": [
+        {
+            "tag": "Lời chào",
+            "patterns": [
+                "Chào",
+                "Một ngày tốt lành",
+                "Xin chào",
+                "Tôi có câu hỏi",
+                "hi",
+                "hey",
+                "Hello",
+                "what's up"
+            ],
+            "responses": [
+                "Xin chào",
+                "Tôi có thể giúp gì cho bạn",
+                "Hãy đặt câu hỏi cho tôi"
+            ],
+            "context_set": "",
+            "Forder": [
+                ""
+            ]
+        },
+        {
+            "tag": "Trọ",
+            "patterns": [
+                "Tôi cần tìm trọ",
+                "Tìm trọ",
+                "Trọ ở khu vực này như nào",
+                "Ở đây còn trọ không",
+                "Khu vực này còn trọ không",
+                "Nơi này trọ có ổn không",
+                "Tình hình nơi ở đây ra sao"
+            ],
+            "responses": [
+                "Dưới đây, tôi sẽ đưa ra danh sách các trọ ở khu vựa này:",
+                "Đây là danh sách các trọ mà tôi biết:",
+                "Các trọ dưới đây có thể sẽ phù hợp với bạn:",
+                "Đây là các trọ bạn cần biết:"
+            ],
+            "Forder": [
+                "Chí Thiện,Minh Anh,Cân Thủy,Kiều Quyên,chunchun,Bảo Anh,"
+            ]
+        },
+        {
+            "tag": "Minh Anh",
+            "patterns": [
+                "Minh Anh"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "\n\tĐịa chỉ cụ thể: Thôn 3, Thạch Hòa, Thạch Thất, Hà Nội.\n\tSố lượng phòng: 20/26.\n\tDiện tích(m2): 21-28.\n\tGiá thành(nghìn vnd): 2.000~3.000."
+            ]
+        },
+        {
+            "tag": "Tuấn Cường",
+            "patterns": [
+                "Tuấn Cường"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ"
+            ],
+            "Forder": [
+                "\n\tĐịa chỉ cụ thể: Thôn 2, Thạch Hòa, Thạch Thất, Hà Nội.\n\tSố lượng phòng: 24/25.\n\tDiện tích(m2): 21-28.\n\tGiá thành(nghìn vnd): 2.000~3.000."
+            ]
+        },
+        {
+            "tag": "Cân Thủy",
+            "patterns": [
+                "Cân Thủy"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "Địa chỉ: Cây xăng 39\n\tSố lượng phòng: 30\n\tDiện tích: 20~24\n\t Giá tiền: 2000.0"
+            ]
+        },
+        {
+            "tag": "Kiều Quyên",
+            "patterns": [
+                "Kiều Quyên"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "\n\tĐịa chỉ cụ thể: Thôn 3, Thạch Hòa, Thạch Thất, Hà Nội.\n\tSố lượng phòng: 21/21.\n\tDiện tích(m2): 21-28.\n\tGiá thành(nghìn vnd): 2.000~3.000."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Tạm biệt",
+                "Tạm biệt bạn!"
+            ],
+            "responses": [
+                "Hẹn gặp lại, cảm ơn vì đã ghé thăm",
+                "Chúc một ngày tốt lành",
+                "Tạm biệt! Hãy quay lại sớm nhé.",
+                "Chúc một ngày tốt lành",
+                "Cảm ơn đã lựa chọn cửa hàng chúng tôi",
+                "Hẹn gặp lại"
+            ],
+            "Forder": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "ok",
+                "Cảm ơn",
+                "Cảm ơn",
+                "Thật hữu ích"
+            ],
+            "responses": [
+                "Rất vui được giúp đỡ!",
+                "Hãy quay lại khi nào cần giúp đỡ!",
+                "Cảm ơn bạn!",
+                "Mong sẽ gặp lại bạn!",
+                "Ok"
+            ],
+            "Forder": [
+                ""
+            ]
+        },
+        {
+            "tag": "Không Hiểu",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Xin lỗi! Tôi không hiểu bạn nói gì!",
+                "Xin lỗi! Tôi ko hiểu ý của bạn. Bạn muốn tìm trọ nào?",
+                "Câu hỏi của bạn ko nằm trong lĩnh vực của tôi> Vui lòng đưa ra thông tin về trọ mà bạn muốn tím hiểu."
+            ],
+            "Forder": [
+                ""
+            ]
+        },
+        {
+            "tag": "tranChung",
+            "patterns": [
+                "tranChung"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "Địa chỉ: .\n\tSố lượng phòng: .\n\tDiện tích: 32423\n\t Giá tiền: ."
+            ]
+        },
+        {
+            "tag": "Chủ trọ",
+            "patterns": [
+                "Chủ trọ",
+                "Thông tin chủ trọ",
+                "Tôi muốn liên lạc với chủ trọ",
+                "Liên lạc"
+            ],
+            "responses": [
+                "Bạn muốn liên lạc với chủ trọ nào hãy nhập theo đúng định dàng dưới đây: 'Chủ trọ + tên trọ'"
+            ],
+            "Forder": [
+                ""
+            ]
+        },
+        {
+            "tag": "Chí Thiện",
+            "patterns": [
+                "Chí Thiện"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "Tên chủ trọ: Thiện\n\tFacebook: \n\tEmail: abc@gmail.com\n\tSố Điện Thoại: ......."
+            ]
+        },
+        {
+            "tag": "Chủ trọ Chí Thiện",
+            "patterns": [
+                "Chủ trọ Chí Thiện"
+            ],
+            "responses": [
+                "Dưới đây là thông tin của chủ trọ ",
+                "Tôi gửi bạn các thông tin về chủ trọ ",
+                "Đây là các thông tin bạn biết về chủ trọ "
+            ],
+            "Forder": [
+                "Tên chủ trọ: a\n\tFacebook: .........\n\tEmail: abc@gmail.com\n\tSố Điện Thoại: ......."
+            ]
+        },
+        {
+            "tag": "Minh Anh",
+            "patterns": [
+                "Minh Anh"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "Địa chỉ: Thôn 2 Thạch Hòa\n\tSố lượng phòng: 50\n\tDiện tích: 22~28\n\tGiá tiền: 2500\n\tTiền Điện: 3000\n\tTiền Nước: 25000\n\tChi phí khác: 10000"
+            ]
+        },
+        {
+            "tag": "Chủ trọ Minh Anh",
+            "patterns": [
+                "Chủ trọ Minh Anh"
+            ],
+            "responses": [
+                "Dưới đây là thông tin của chủ trọ ",
+                "Tôi gửi bạn các thông tin về chủ trọ ",
+                "Đây là các thông tin bạn biết về chủ trọ "
+            ],
+            "Forder": [
+                "Tên chủ trọ: e\n\tFacebook: ..........\n\tEmail: abc@gmail.com\n\tSố Điện Thoại: ........."
+            ]
+        },
+        {
+            "tag": "Chí Thiện",
+            "patterns": [
+                "Chí Thiện"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "Tên chủ trọ: Thiện\n\tFacebook: \n\tEmail: abc@gmail.com\n\tSố Điện Thoại: ......."
+            ]
+        },
+        {
+            "tag": "Chủ trọ Chí Thiện",
+            "patterns": [
+                "Chủ trọ Chí Thiện"
+            ],
+            "responses": [
+                "Dưới đây là thông tin của chủ trọ ",
+                "Tôi gửi bạn các thông tin về chủ trọ ",
+                "Đây là các thông tin bạn biết về chủ trọ "
+            ],
+            "Forder": [
+                "Tên chủ trọ: Thiện\n\tFacebook: \n\tEmail: abc@gmail.com\n\tSố Điện Thoại: ......."
+            ]
+        },
+        {
+            "tag": "chunchun",
+            "patterns": [
+                "chunchun"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "Địa chỉ: Cây xăng 39\n\tSố lượng phòng: 24\n\tDiện tích: 22~26\n\tGiá tiền: 2200\n\tTiền Điện: 3000\n\tTiền Nước: 25000\n\tChi phí khác: 100000"
+            ]
+        },
+        {
+            "tag": "Chủ trọ chunchun",
+            "patterns": [
+                "Chủ trọ chunchun"
+            ],
+            "responses": [
+                "Dưới đây là thông tin của chủ trọ ",
+                "Tôi gửi bạn các thông tin về chủ trọ ",
+                "Đây là các thông tin bạn biết về chủ trọ "
+            ],
+            "Forder": [
+                "Tên chủ trọ: Chung\n\tFacebook: ..............\n\tEmail: abc@gmail.com\n\tSố Điện Thoại: ..........."
+            ]
+        },
+        {
+            "tag": "Bảo Anh",
+            "patterns": [
+                "Bảo Anh"
+            ],
+            "responses": [
+                "Đây là thông tin về trọ "
+            ],
+            "Forder": [
+                "Địa chỉ: Tân Xã\n\tSố lượng phòng: 20\n\tDiện tích: 20~24\n\tGiá tiền: 2200\n\tTiền Điện: 3000\n\tTiền Nước: 25000\n\tChi phí khác: 100000"
+            ]
+        },
+        {
+            "tag": "Chủ trọ Bảo Anh",
+            "patterns": [
+                "Chủ trọ Bảo Anh"
+            ],
+            "responses": [
+                "Dưới đây là thông tin của chủ trọ ",
+                "Tôi gửi bạn các thông tin về chủ trọ ",
+                "Đây là các thông tin bạn biết về chủ trọ "
+            ],
+            "Forder": [
+                "Tên chủ trọ: Bảo Anh\n\tFacebook: ...........\n\tEmail: abc@gmail.com\n\tSố Điện Thoại: .........."
+            ]
+        }
+    ]
+}

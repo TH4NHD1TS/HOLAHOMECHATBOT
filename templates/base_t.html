@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style_t.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+    <div class="containeri">
+        <header>
+            <img src="{{ url_for('static', filename='img/FPT.jpg') }}"width="100%" />
+        </header>
+
+        <!-- <section class="logo">
+            <img src="{{ url_for('static', filename='img/THANH.png') }}"width="20px" />
+        </section> -->
+        <nav>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Destinations</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">landing</a></li>
+                <li><a href="">Shop</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <div class="post">
+                <div class="post-content">
+                    <div class="post-detail">
+                        <h2>HOA LAC</h2>
+                        <p class=" decription">1. Quy mô diện tích:
+                        Quy mô diện tích nghiên cứu quy hoạch khoảng 17.274ha.
+                        2. Quy mô dân số:
+                        Quy mô dân số dự kiến đến năm 2030 là khoảng 600 nghìn người
+                        </p>
+                        <button class="button-post">Read more</button>
+                    </div>
+                </div>
+
+                <div class="post img">
+                    <img src="{{ url_for('static', filename='img/hoa lac.jpg') }}"width="100%" />
+
+                </div>
+            </div>
+            <div class="product">
+                <h2>CÁC BẠN ĐANG MUỐN TÌM TRỌ Ở HÒA LẠC</h2>
+                <div class="product-list">
+                    <div class="product-items">
+                        <img src="{{ url_for('static', filename='img/nha tro 3.jfif') }}"width="100%" />
+                        <div class="product-detail">
+                            <h3>Minh Anh Motel</h3>
+                            <span class="product-hot">
+                                con phong
+                            </span>
+                            <button class="button-book button">Book this motel</button>
+                        </div>
+                    </div>
+
+                    <div class="product-list">
+                        <div class="product-items">
+                            <img src="{{ url_for('static', filename='img/nha tro 3.jfif') }}"width="100%" />
+                            <div class="product-detail">
+                                <h3>Minh Anh Motel</h3>
+                                <span class="product-hot">
+                                    con phong
+                                </span>
+                                <button class="button-book button">Book this motel</button>
+                            </div>
+                        </div>
+
+                        <div class="product-list">
+                            <div class="product-items">
+                                <img src="{{ url_for('static', filename='img/nha tro 3.jfif') }}"width="100%" />
+                                <div class="product-detail">
+                                    <h3>Minh Anh Motel</h3>
+                                    <span class="product-hot">
+                                        con phong
+                                    </span>
+                                    <button class="button-book button">Book this motel</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

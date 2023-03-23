@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='index_admin.css') }}">
+</head>
+		{% if success %}
+            <p style="color:red; font-family: 'Courier', sans-serif;">{{ success }}</p>
+        {% endif %}
+	<img class="login_img" src="{{ url_for('static', filename='img/login.png') }}">
+<body>
+	<h1 class="Title">Login</h1>
+	<form class="container" method="POST" action="/admin/login_admin" />
+		<label class="login_id">ID RoomName:</label>
+		<input class="login_text" type="text" name="NameRoom">
+		<input class="login_submit" type="submit" value="Submit">
+	</form>
+</body>
+</html>

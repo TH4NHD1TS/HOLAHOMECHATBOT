@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Tro</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
+	<video playsinline autoplay muted loop>
+        <source src="https://media.istockphoto.com/id/1414588966/vi/video/g%C3%B5-tr%C3%AAn-m%C3%A1y-%C4%91%C3%A1nh-ch%E1%BB%AF-c%E1%BB%95-%C4%91i%E1%BB%83n-c%C5%A9.mp4?s=mp4-640x640-is&k=20&c=ZwW6S5qoMoxQqh5uKlaBc5kUMdo5__6GmD5FdU-bBsM=">
+    </video>
+</head>
+<body>
+
+	<div class="container form-column">
+		<h1 class="Title">Edit Tro</h1>
+		<form method="POST" action="{{ url_for('update') }}" onsubmit="return validateForm()" name="myForm">
+			<input type="hidden" name="id" value="{{ tro.id }}">
+			<label>NameBoss:</label>
+			<input type="text" name="NameBoss" value="{{ tro.NameBoss }}"><br><br>
+			<label>NameRoom:</label>
+			<input type="text" name="NameRoom" value="{{ tro.NameRoom }}"><br><br>
+			<label>Address:</label>
+			<input type="text" name="Address" value="{{ tro.Address }}"><br><br>
+			<label>RoomNum:</label>
+			<input type="text" name="roomNum" value="{{ tro.roomNum }}"><br><br>
+			<label>Area:</label>
+			<input type="text" name="Area" value="{{ tro.Area }}"><br><br>
+			<label>Money:</label>
+			<input type="text" name="Money" value="{{ tro.Money }}"><br><br>
+			<label>ElectricityBill:</label>
+			<input type="text" name="ElectricityBill" value="{{ tro.ElectricityBill }}"><br><br>
+			<label>WaterMoney:</label>
+			<input type="text" name="WaterMoney" value="{{ tro.WaterMoney }}"><br><br>
+			<label>OtherCosts:</label>
+			<input type="text" name="OtherCosts" value="{{ tro.OtherCosts }}"><br><br>
+			<label>Facebook:</label>
+			<input type="text" name="Facebook" value="{{ tro.Facebook }}"><br><br>
+			<label>Gmail:</label>
+			<input type="text" name="Gmail" value="{{ tro.Gmail }}"><br><br>
+			<label>SDT:</label>
+			<input type="text" name="SDT" value="{{ tro.SDT }}"><br><br>
+			<input type="submit" value="Submit"><br><br>
+		</form>
+	</div>
+
+	<script>
+		function validateForm() {
+		  var nameBoss = document.forms["myForm"]["NameBoss"].value;
+		  var nameRoom = document.forms["myForm"]["NameRoom"].value;
+		  var address = document.forms["myForm"]["Address"].value;
+		  var roomNum = document.forms["myForm"]["roomNum"].value;
+		  var area = document.forms["myForm"]["Area"].value;
+		  var money = document.forms["myForm"]["Money"].value;
+		  var electricityBill = document.forms["myForm"]["ElectricityBill"].value;
+		  var waterMoney = document.forms["myForm"]["WaterMoney"].value;
+		  var otherCosts = document.forms["myForm"]["OtherCosts"].value;
+		  var facebook = document.forms["myForm"]["Facebook"].value;
+		  var gmail = document.forms["myForm"]["Gmail"].value;
+		  var sdt = document.forms["myForm"]["SDT"].value;
+
+		if (nameBoss == "None" || nameRoom == "None" || address == "None" || roomNum == "None" || area == "None"
+		   || money == "None" || electricityBill == "None" || waterMoney == "None" || otherCosts == "None" || facebook == "None" || gmail == "None" || sdt == "None") {
+			alert("Please fill in all fields.");
+			return false;
+		}
+
+	}
+</script>
+
+</body>
